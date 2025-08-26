@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+
+        
         /* --- Global --- */
         body {
             font-family: 'Poppins', sans-serif;
@@ -126,20 +128,31 @@
 
         /* --- About --- */
         #about img {
-            max-width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
+            max-width: 50%;
+        
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+            /* center image nicely */
+            transition: transform 0.3s ease;
         }
 
         #about img:hover {
-            transform: scale(1.08) rotate(2deg);
+            transform: scale(1.05);
+        }
+
+        #about .col-md-6 {
+            margin-bottom: 20px;
+            /* adds gap in responsive mode */
         }
 
         #about p {
             font-size: 1rem;
-            line-height: 1.6;
+            line-height: 1.9;
             color: #ccc;
+            text-align: justify;
         }
+
 
         .download-btn {
             display: inline-block;
@@ -415,6 +428,23 @@
             #home p {
                 font-size: 1rem;
             }
+
+            #about img {
+                max-width: 70%;
+                
+            }
+
+            #about .col-md-6 {
+                margin-bottom: 30px;
+                /* extra spacing between img and text */
+            }
+
+            #about p {
+                line-height: 2;
+                font-size: 0.95rem;
+                text-align: justify;
+                
+            }
         }
     </style>
 </head>
@@ -455,11 +485,11 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="row align-items-center">
-                <div class="col-md-6"><img src="suhaib.webp" alt="Developer Image"></div>
+                <div class="col-md-6"><img src="suhaib.jpg" alt="Developer Image"></div>
                 <div class="col-md-6">
                     <p>Hi! I'm Suhaib Ahmed Abbasi, a skilled Software Engineer specializing in front-end development. I
                         design and develop responsive, interactive, and high-performance web applications using HTML,
-                        CSS, JavaScript, and React.js, emphasizing clean, maintainable, and scalable code. My focus is
+                        CSS, Bootstrap, JavaScript, and React.js, emphasizing clean, maintainable, and scalable code. My focus is
                         on delivering exceptional user experiences while transforming ideas into innovative and
                         functional digital solutions.</p>
                 </div>
