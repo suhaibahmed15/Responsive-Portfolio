@@ -1,0 +1,124 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9fafb;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: white;
+    color: #0077b6;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #023e8a;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #023e8a;
+}
+
+/* About Section */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+/* Portfolio Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Services Section */
+.services-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.services-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Testimonials Section */
+blockquote {
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
